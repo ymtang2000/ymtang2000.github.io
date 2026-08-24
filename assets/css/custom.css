@@ -1,0 +1,31 @@
+/* Small overrides on top of the Strata template.
+   Kept in a separate file so main.css stays untouched and upgradeable. */
+
+/* Replaces the old <font size> / <font color> tags in the header. */
+#header .name {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#header .name-cn {
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+#header .role {
+  display: block;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+/* Section headings: was <font color="#263238">. */
+#main .major h2 { color: #263238; }
+
+/* Contact list: make the address block read as data, not prose. */
+.labeled-icons a { border-bottom-color: rgba(0,0,0,0.25); }
+
+/* Footer link row. */
+#footer .copyright { margin-top: 1em; }

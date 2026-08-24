@@ -1,0 +1,70 @@
+/* Small overrides on top of the Helios template.
+   Kept separate so main.css stays untouched and upgradeable. */
+
+/* Was <font color="#616161"> on every publication title. */
+#main a.plain { color: #616161; }
+#main a.plain:hover { color: #49bf9d; }
+
+/* Reference lines under each research topic: was <font size="4">. */
+.refs { font-size: 0.95em; }
+.refs em { color: #616161; }
+
+/* Status tag for submitted / in-press papers. */
+.status {
+  display: inline-block;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7f8891;
+  border: solid 1px rgba(127,136,145,0.4);
+  border-radius: 0.35em;
+  padding: 0 0.5em;
+  margin-left: 0.35em;
+  vertical-align: 0.1em;
+}
+
+/* Publication list. Each list is its own <ol reversed>, so the two
+   sections are numbered separately and both count down from the top. */
+.publist {
+  list-style: decimal outside;
+  margin: 0;
+  padding-left: 2.6em;
+}
+.publist > li { padding: 0 0 1.2em 0; }
+.publist > li::marker { color: #7f8891; }
+.publist .authors {
+  display: block;
+  font-style: italic;
+}
+.publist .authors .ref {
+  font-style: normal;
+  color: #7f8891;
+  margin-left: 1.75em;
+  white-space: nowrap;
+}
+@media screen and (max-width: 736px) {
+  .publist { padding-left: 1.8em; }
+  .publist .authors .ref {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.2em;
+  }
+}
+
+/* Research page: the old layout positioned everything with negative
+   margins and fixed pixel widths, which collapsed on narrow screens.
+   This replaces it with a normal flow that reflows on mobile. */
+.topic { margin: 0 0 1em 0; }
+.topic .lede-figure {
+  float: right;
+  width: 45%;
+  max-width: 542px;
+  margin: 0 0 1.5em 2em;
+}
+.topic .lede-figure img { width: 100%; height: auto; }
+@media screen and (max-width: 736px) {
+  .topic .lede-figure { float: none; width: 100%; margin: 0 0 1.5em 0; }
+}
+.figrow { margin-top: 1.5em; }
+.figrow .work-item { margin-bottom: 1em; }
+.figrow img { width: 100%; height: auto; }
