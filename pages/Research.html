@@ -9,7 +9,7 @@
 		<title>Research - Yimeng Tang</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Research by Yimeng Tang on dwarf galaxies, ultra-diffuse galaxies, globular cluster systems and disk galaxy structure." />
+		<meta name="description" content="Research by Yimeng Tang on dwarf galaxies, ultra-diffuse galaxies, globular clusters, stellar feedback and galaxy structure." />
 		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
@@ -46,6 +46,14 @@
 				display: block;
 				width: 100%;
 				height: auto;
+			}
+
+			.paper-figure .image:before { display: none; }
+
+			.side-figure figcaption {
+				font-size: 0.85em;
+				line-height: 1.5;
+				margin-top: 0.75em;
 			}
 
 			/* Intro band. */
@@ -98,6 +106,47 @@
 								</div>
 								<figure class="side-figure">
 									<img src="images/NGC2915.jpeg" alt="Optical image of the dwarf galaxy NGC 2915" />
+								</figure>
+							</section>
+
+
+							<section class="topic" id="b122">
+								<div class="topic-body">
+									<header>
+										<h3>Star-forming Clumps in Coma-B122: Possible Globular Cluster Progenitors</h3>
+									</header>
+									<p>
+										How can a diffuse galaxy form massive, dense star clusters? Coma-B122 offers a nearby laboratory: this star-forming ultra-diffuse galaxy hosts about ten luminous clumps arranged in a ring roughly 2 kpc from its center. Combining Subaru/HSC imaging with Keck/KCWI spectroscopy, I find that the clumps contain about 7% of the galaxy's stellar mass, with typical masses near 10<sup>6</sup> M<sub>&odot;</sub>. Their formation coincides with a recent episode of enhanced star formation in the diffuse stellar body. The galaxy's asymmetric light distribution and gas properties suggest that interaction with the Coma environment may help trigger this activity. B122 could illuminate a pathway to globular cluster formation in diffuse galaxies, although higher-resolution observations are needed to establish whether its clumps are bound and can survive as globular clusters.
+									</p>
+									<p class="refs">
+										Related publication:<br />
+										&ndash; <a class="plain" href="https://arxiv.org/abs/2611.01653">An Unusually Clumpy Ultra-Diffuse Galaxy in the Coma Cluster: A Missing Link for Globular Cluster Formation?</a><br />
+										&nbsp;&nbsp;&nbsp;<strong>Yimeng Tang</strong>, Aaron J. Romanowsky, Nobuhiro Okabe, and Kevin A. Bundy <em>2026, submitted to ApJ, arXiv:2611.01653</em>
+									</p>
+								</div>
+								<figure class="side-figure paper-figure">
+									<a href="images/B122/F1-no-kcwi.svg" class="image fit" target="_blank" rel="noopener"><img src="images/B122/F1-no-kcwi.svg" alt="Coma-B122 Figure 1 without Keck/KCWI footprints: Subaru/HSC g- and r-band color image showing bright star-forming clumps, a 1 kpc scale bar, north and east directions, and an arrow toward the Coma center" /></a>
+									<figcaption>Figure 1, without the KCWI footprints. Subaru/HSC view of Coma-B122 and its bright clumps. The scale bar is 1 kpc; the white arrow points toward the Coma center. Click to enlarge.</figcaption>
+								</figure>
+							</section>
+
+							<section class="topic" id="breathing-mode">
+								<div class="topic-body">
+									<header>
+										<h3>Where Does the Kinematic Signature of Stellar Feedback Fade?</h3>
+									</header>
+									<p>
+										Repeated bursts of star formation can drive gas outflows and re-accretion, producing a &ldquo;breathing mode&rdquo; in simulated dwarf galaxies. To test how its gas-kinematic signature depends on stellar mass, I combine DESI spectroscopy with COSMOS2020 photometry for about 1,200 star-forming galaxies at z &lt; 0.25. After removing the mean mass dependence of ionized-gas velocity dispersion, its residual correlates positively with recent specific star formation rate below log(M<sub>&star;</sub>/M<sub>&odot;</sub>) &asymp; 9.8. The correlation weakens rapidly above this mass, for star formation averaged over both 10 and 100 Myr. This provides an observational benchmark for feedback models. Joint tests of stellar structure are the next step toward connecting this gas signature to galaxy-wide breathing cycles.
+									</p>
+									<p class="refs">
+										Related publication:<br />
+										&ndash; <a class="plain" href="https://arxiv.org/abs/2611.02580">The Stellar-Mass Dependence of Feedback-Driven Outflows in DESI DR1 Star-Forming Galaxies</a><br />
+										&nbsp;&nbsp;&nbsp;<strong>Yimeng Tang</strong>, Yifei Luo, and Conghao Zhou <em>2026, submitted to ApJL, arXiv:2611.02580</em>
+									</p>
+								</div>
+								<figure class="side-figure paper-figure">
+									<a href="images/breathing-mode/F5.svg" class="image fit" target="_blank" rel="noopener"><img src="images/breathing-mode/F5.svg" alt="Figure 5 of the breathing mode paper: slope of gas velocity-dispersion residual versus specific star formation rate as a function of stellar mass, with a positive low-mass correlation that declines toward zero and negative values above log stellar mass about 9.8" /></a>
+									<figcaption>Figure 5. Mass dependence of the gas-kinematic correlation with star formation averaged over 100 Myr (red) and 10 Myr (blue). Error bars show slope uncertainties. Click to enlarge.</figcaption>
 								</figure>
 							</section>
 
